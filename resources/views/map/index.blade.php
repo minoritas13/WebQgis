@@ -82,7 +82,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('background/background.jpg') center/cover no-repeat;
+            background: url('/background/background.jpg') center/cover no-repeat;
             opacity: 0.25;
             z-index: -1;
         }
@@ -299,7 +299,7 @@
         let markerLayerGroup = L.layerGroup().addTo(map);
 
         const customIcon = L.icon({
-            iconUrl: '/storage/icons/gas.png',
+            iconUrl: '/icons/gas.png',
             iconSize: [35, 35],
             iconAnchor: [17, 34],
             popupAnchor: [0, -30]
