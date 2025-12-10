@@ -257,7 +257,7 @@
                             <span>Jl. Jendral Sudirman No. 123,<br>Pringsewu, Lampung</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span>dinas.pendidikan@pringsewu.go.id</span>
+                            <span>dinas.ilmuKomputer.go.id</span>
                         </li>
                     </ul>
                 </div>
@@ -266,10 +266,6 @@
             <div
                 class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
                 <p>&copy; 2024 WebGIS Sekolah Pringsewu. All rights reserved.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <a href="#" class="hover:text-white">Terms of Service</a>
-                </div>
             </div>
         </div>
     </footer>
