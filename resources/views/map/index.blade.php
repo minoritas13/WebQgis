@@ -7,6 +7,7 @@
     <title>Peta Sekolah</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     <style>
         body {
             background: linear-gradient(135deg, #f4e8ff, #e0f2ff);
@@ -15,10 +16,52 @@
         .card-list-item:hover {
             background: #f9fafb;
         }
+
+        /* Custom Scrollbar */
+        #list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        #list::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        #list::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        /* =====================================================
+           ANIMASI GLOBAL SECTION FADE-IN
+        ====================================================== */
+        .fade-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =====================================================
+           ANIMASI LIST ITEM
+        ====================================================== */
+        .list-item-anim {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.4s ease-out;
+        }
+
+        .list-item-anim.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
     </style>
 </head>
 
-<body class="font-sans relative overflow-hidden" style="background:#ff8c32;">
+<body class="font-sans relative min-h-screen flex flex-col overflow-x-hidden" style="background:#ff8c32;">
 
     <style>
         body::before {
@@ -41,61 +84,334 @@
             height: 100%;
             background: url('background/background.jpg') center/cover no-repeat;
             opacity: 0.25;
-            /* Ubah opacity sesuai kebutuhan */
             z-index: -1;
         }
     </style>
 
-    <!-- NAVBAR -->
-    <nav class="mx-5 bg-orange-500/40 rounded-full backdrop-blur-md text-white px-6 py-4 shadow-lg sticky top-3 z-50">
-        <div class="flex justify-between items-center max-w-full">
-            <div class="text-2xl font-bold">WebGIS</div>
-            <div class="flex gap-6 text-lg"> <a href="#" class="hover:text-gray-300">Pencarian</a> <a
-                    href="#" class="hover:text-gray-300">Peta</a> <a href="#"
-                    class="hover:text-gray-300">Tentang</a> </div>
-        </div>
-    </nav>
+    <nav
+        class="mx-2 lg:mx-5 mt-2 lg:mt-3 bg-orange-500/40 rounded-2xl lg:rounded-3xl backdrop-blur-md text-white px-4 py-3 shadow-lg sticky top-2 z-50 border border-white/20 transition-all">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 lg:gap-0">
+            <div class="flex items-center justify-between w-full lg:w-auto">
+                <div class="text-xl lg:text-2xl font-bold flex items-center gap-2">
+                    <span>WebGIS</span>
+                </div>
+                <button id="mobileMenuBtn"
+                    class="lg:hidden text-white/90 hover:text-white focus:outline-none p-1 bg-white/10 rounded-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
 
-    <div class="max-w-full p-4 mt-4">
-        <div class="p-6">
+            <div class="flex flex-wrap lg:flex-nowrap justify-center gap-2 lg:gap-3 items-center w-full lg:w-auto">
+                <div class="grid grid-cols-2 lg:flex gap-2 w-full lg:w-auto">
+                    <select id="filterJenjang"
+                        class="col-span-1 bg-white/20 border border-white/30 text-white text-xs lg:text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-white/50 py-2 px-3 cursor-pointer">
+                        <option value="" class="text-gray-800 bg-white">Semua Jenjang</option>
+                        <option value="SD" class="text-gray-800 bg-white">SD</option>
+                        <option value="SMP" class="text-gray-800 bg-white">SMP</option>
+                        <option value="SMA" class="text-gray-800 bg-white">SMA</option>
+                        <option value="SMK" class="text-gray-800 bg-white">SMK</option>
+                    </select>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-                <!-- LIST SEKOLAH -->
-                <div
-                    class="col-span-1 bg-white/15 backdrop-blur-md rounded-2xl p-4 max-h-[650px] shadow-inner flex flex-col">
-
-                    <!-- Header dibuat sticky -->
-                    <h3
-                        class="text-xl font-semibold text-white py-1 z-10">
-                        Daftar Sekolah
-                    </h3>
-
-                    <!-- Scroll hanya pada list -->
-                    <div id="list" class="space-y-3 overflow-y-auto">
-                    </div>
-
+                    <select id="filterStatus"
+                        class="col-span-1 bg-white/20 border border-white/30 text-white text-xs lg:text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-white/50 py-2 px-3 cursor-pointer">
+                        <option value="" class="text-gray-800 bg-white">Semua Status</option>
+                        <option value="Negeri" class="text-gray-800 bg-white">Negeri</option>
+                        <option value="Swasta" class="text-gray-800 bg-white">Swasta</option>
+                    </select>
                 </div>
 
+                <select id="filterAkreditasi"
+                    class="w-full lg:w-auto bg-white/20 border border-white/30 text-white text-xs lg:text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-white/50 py-2 px-3 cursor-pointer">
+                    <option value="" class="text-gray-800 bg-white">Akreditasi (Semua)</option>
+                    <option value="A" class="text-gray-800 bg-white">A</option>
+                    <option value="B" class="text-gray-800 bg-white">B</option>
+                    <option value="C" class="text-gray-800 bg-white">C</option>
+                </select>
 
-                <!-- MAP -->
-                <div class="col-span-2 relative">
-                    <div id="map" class="w-full h-[650px] rounded-2xl shadow"></div>
+                <div class="relative group w-full lg:w-64">
+                    <input type="text" id="searchInput" placeholder="Cari sekolah..."
+                        class="w-full bg-white/20 border border-white/30 text-white placeholder-gray-100 text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-white/50 py-2 px-4 pl-10 transition-all shadow-inner backdrop-blur-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 absolute left-3 top-3 text-white/80"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex gap-6 text-lg font-medium ml-4">
+                <a href="#map" class="hover:text-yellow-200 transition">Peta</a>
+                <a href="#tentang-kami" class="hover:text-yellow-200 transition">Tentang</a>
+            </div>
+
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden flex-col gap-2 mt-4 pb-2 border-t border-white/20 pt-4">
+            <a href="#map" class="block px-4 py-2 hover:bg-white/10 rounded-lg transition font-medium">📍 Peta</a>
+            <a href="#tentang-kami" class="block px-4 py-2 hover:bg-white/10 rounded-lg transition font-medium">ℹ️
+                Tentang</a>
+        </div>
+
+    </nav>
+
+    <div class="flex-grow max-w-full p-2 lg:p-4 mt-1 lg:mt-2">
+        <div class="lg:p-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+
+                <div class="col-span-1 lg:col-span-2 relative order-1 lg:order-2">
+                    <div id="map"
+                        class="w-full h-[50vh] lg:h-full min-h-[300px] rounded-2xl shadow-lg border border-white/20 z-0">
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-1 order-2 lg:order-1 bg-white/15 backdrop-blur-md rounded-2xl p-4 h-[45vh] lg:h-[calc(100vh-140px)] shadow-inner flex flex-col border border-white/20">
+                    <div class="flex justify-between items-center pb-2 border-b border-white/20 mb-2">
+                        <h3 class="text-lg lg:text-xl font-semibold text-white">Daftar Sekolah</h3>
+                        <span id="countDisplay"
+                            class="text-[10px] lg:text-xs bg-orange-600 text-white px-2 py-1 rounded-full shadow">0
+                            Data</span>
+                    </div>
+                    <div id="list" class="space-y-3 overflow-y-auto pr-1 lg:pr-2 flex-1"></div>
                 </div>
 
             </div>
         </div>
     </div>
 
+    <section id="tentang-kami"
+        class="mt-10 px-4 lg:px-10 py-12 bg-white/10 backdrop-blur-xl border-t border-white/20 rounded-2xl shadow-inner">
+        <div class="max-w-5xl mx-auto text-white">
+
+            <h2 class="text-3xl font-bold mb-4 text-orange-200">Tentang Kami</h2>
+
+            <p class="text-white/80 leading-relaxed mb-6">
+                WebGIS Sekolah Kabupaten Pringsewu adalah Sistem Informasi Geografis berbasis web
+                yang dirancang untuk menyediakan informasi lengkap mengenai persebaran sekolah mulai
+                dari jenjang SD, SMP, SMA, hingga SMK. Aplikasi ini dikembangkan untuk mendukung
+                keterbukaan data dan mempermudah masyarakat dalam mendapatkan informasi pendidikan.
+            </p>
+
+            <h3 class="text-xl font-semibold text-orange-300 mb-2">Tujuan Pengembangan</h3>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Menyediakan platform pemetaan sekolah yang interaktif dan mudah digunakan.</li>
+                <li>Meningkatkan akurasi informasi sekolah untuk kebutuhan masyarakat dan pemerintah.</li>
+                <li>Mempercepat proses pencarian sekolah berdasarkan lokasi, jenjang, status, dan akreditasi.</li>
+                <li>Mendukung perencanaan pendidikan berbasis data spasial.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-orange-300 mt-6 mb-2">Fitur Utama</h3>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Pemetaan sekolah dengan teknologi Leaflet Maps.</li>
+                <li>Filter interaktif berdasarkan jenjang, status, akreditasi, dan kata kunci.</li>
+                <li>Detail informasi sekolah lengkap dengan popup interaktif.</li>
+                <li>Responsive layout mendukung tampilan mobile dan desktop.</li>
+                <li>Pencarian cepat nama sekolah atau alamat.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-orange-300 mt-6 mb-2">Manfaat Aplikasi</h3>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Memberikan akses informasi sekolah secara cepat dan akurat.</li>
+                <li>Mendukung orang tua dan siswa dalam memilih sekolah yang sesuai.</li>
+                <li>Membantu pemerintah dalam analisis sebaran fasilitas pendidikan.</li>
+                <li>
+                    Menjadi dasar untuk pengambilan keputusan dan penyusunan kebijakan pendidikan
+                    berbasis spasial.
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <footer class="mt-8 bg-orange-900/40 backdrop-blur-xl border-t border-white/10 text-white pt-10 pb-6">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-3 flex items-center gap-2">
+                        <span>WebGIS Sekolah</span>
+                    </h2>
+                    <p class="text-white/70 text-sm leading-relaxed">
+                        Sistem Informasi Geografis untuk pemetaan lokasi sekolah di Kabupaten Pringsewu. Temukan
+                        informasi lengkap sekolah mulai dari SD, SMP, hingga SMA/SMK.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-orange-200">Navigasi</h3>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li><a href="#map" class="hover:text-white transition hover:underline">Beranda</a></li>
+                        <li><a href="#tentang-kami" class="hover:text-white transition hover:underline">Tentang Aplikasi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-orange-200">Hubungi Kami</h3>
+                    <ul class="space-y-3 text-sm text-white/80">
+                        <li class="flex items-start gap-3">
+                            <span>Jl. Jendral Sudirman No. 123,<br>Pringsewu, Lampung</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>dinas.pendidikan@pringsewu.go.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
+                <p>&copy; 2024 WebGIS Sekolah Pringsewu. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     <script>
-        const map = L.map('map').setView([-5.3565, 104.9747], 12);
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+
+        const map = L.map('map').setView([-5.3565, 104.9747], 10);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19
         }).addTo(map);
 
         const listContainer = document.getElementById('list');
-        const markers = [];
+        const countDisplay = document.getElementById('countDisplay');
+        const inputs = {
+            search: document.getElementById('searchInput'),
+            jenjang: document.getElementById('filterJenjang'),
+            status: document.getElementById('filterStatus'),
+            akreditasi: document.getElementById('filterAkreditasi')
+        };
+
+        let markers = [];
+        let markerLayerGroup = L.layerGroup().addTo(map);
+
+        const customIcon = L.icon({
+            iconUrl: '/storage/icons/gas.png',
+            iconSize: [35, 35],
+            iconAnchor: [17, 34],
+            popupAnchor: [0, -30]
+        });
+
+        /* =====================================================
+           TAMBAHAN: OBSERVER LIST ITEM
+        ====================================================== */
+        const listObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add("show");
+            });
+        }, { threshold: 0.1 });
+
+        const observeListItems = () => {
+            document.querySelectorAll(".list-item-anim").forEach(item => listObserver.observe(item));
+        };
+
+        /* =====================================================
+           RENDER DATA (DIBUNGKUS AGAR BISA MENAMBAHKAN ANIMASI)
+        ====================================================== */
+        function renderData(items, limitList = null) {
+            listContainer.innerHTML = "";
+            markerLayerGroup.clearLayers();
+            countDisplay.innerText = `${items.length} Data Ditemukan`;
+
+            if (items.length === 0) {
+                listContainer.innerHTML =
+                    '<div class="text-center text-white/80 p-4 italic text-sm">Data tidak ditemukan.</div>';
+                return;
+            }
+
+            items.forEach(item => {
+                item.marker.addTo(markerLayerGroup);
+            });
+
+            const maxList = limitList ? limitList : 50;
+            const listItems = items.slice(0, maxList);
+
+            listItems.forEach(item => {
+                const div = document.createElement('div');
+                div.className =
+                    'p-3 lg:p-4 rounded-xl border bg-white shadow-sm cursor-pointer hover:bg-orange-50 transition transform active:scale-95 duration-200 list-item-anim';
+                div.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div class="font-bold text-sm lg:text-lg text-gray-800 leading-tight w-3/4">${item.name}</div>
+                        <span class="text-[10px] lg:text-xs font-bold bg-blue-100 text-blue-600 px-2 py-0.5 rounded">${item.data.AKREDITASI || '-'}</span>
+                    </div>
+                    <div class="text-[10px] lg:text-xs text-orange-600 font-semibold mt-1">${item.data.JENJANG ?? '-'} • ${item.data.STATUS ?? '-'}</div>
+                    <div class="text-[10px] lg:text-xs text-gray-500 mt-1 truncate flex items-center gap-1">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        ${item.data.ALAMAT ?? 'Alamat tidak tersedia'}
+                    </div>
+                `;
+                div.onclick = () => {
+                    map.setView(item.latlng, 17);
+                    item.marker.openPopup();
+                    if (window.innerWidth < 1024) document.getElementById('map').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    document.querySelectorAll('#list > div').forEach(el => el.classList.remove('ring-2',
+                        'ring-orange-500'));
+                    div.classList.add('ring-2', 'ring-orange-500');
+                };
+                listContainer.appendChild(div);
+            });
+
+            if (items.length > maxList) {
+                const infoDiv = document.createElement('div');
+                infoDiv.className = 'text-center text-xs text-white/80 py-2 italic';
+                infoDiv.innerText = `Menampilkan ${maxList} dari ${items.length} data.`;
+                listContainer.appendChild(infoDiv);
+            }
+
+            observeListItems();
+
+            if (items.length > 0 && items.length <= 10) {
+                const group = L.featureGroup(items.map(m => m.marker));
+                map.fitBounds(group.getBounds().pad(0.2));
+            }
+        }
+
+        function applyFilters() {
+            const keyword = inputs.search.value.toLowerCase();
+            const jenjangVal = inputs.jenjang.value;
+            const statusVal = inputs.status.value;
+            const akreditasiVal = inputs.akreditasi.value;
+
+            if (keyword === "" && jenjangVal === "" && statusVal === "" && akreditasiVal === "") {
+                renderData(markers, 10);
+                return;
+            }
+
+            const filtered = markers.filter(item => {
+                const props = item.data;
+                const matchSearch = item.name.toLowerCase().includes(keyword) ||
+                    (props.ALAMAT && props.ALAMAT.toLowerCase().includes(keyword));
+                const matchJenjang = jenjangVal === "" || (props.JENJANG === jenjangVal);
+                const matchStatus = statusVal === "" || (props.STATUS === statusVal);
+                const matchAkreditasi = akreditasiVal === "" || (props.AKREDITASI === akreditasiVal);
+                return matchSearch && matchJenjang && matchStatus && matchAkreditasi;
+            });
+            renderData(filtered);
+        }
+
+        Object.values(inputs).forEach(input => {
+            input.addEventListener('input', applyFilters);
+        });
 
         fetch("{{ route('geojson.show') }}")
             .then(response => response.json())
@@ -112,47 +428,68 @@
                     pointToLayer: function(feature) {
                         const coords = feature.geometry.coordinates;
                         const latlng = [coords[1], coords[0]];
-
                         const marker = L.marker(latlng, {
                             icon: customIcon
                         });
+
+                        let content =
+                            `<b class="text-orange-600 text-lg">${feature.properties.NAMA_SEKOLAH}</b><br>`;
+                        content +=
+                            `<div class="text-sm mt-1 text-gray-600">${feature.properties.ALAMAT}</div>`;
+                        marker.bindPopup(content);
+
                         markers.push({
-                            name: feature.properties?.NAMA_SEKOLAH ?? 'Tidak ada nama',
+                            name: feature.properties.NAMA_SEKOLAH ?? 'Tanpa Nama',
                             data: feature.properties,
                             marker: marker,
                             latlng: latlng
                         });
-                        return marker;
-                    },
-                    onEachFeature: (feature, layer) => {
-                        let content = '<b>Informasi Sekolah</b><br>';
-                        for (const key in feature.properties) content +=
-                            `${key}: ${feature.properties[key]}<br>`;
-                        layer.bindPopup(content);
                     }
-                }).addTo(map);
-
-                map.fitBounds(geoLayer.getBounds());
-
-                const limitedMarkers = markers.slice(0, 10);
-
-                limitedMarkers.forEach((item, index) => {
-                    const div = document.createElement('div');
-                    div.className = 'card-list-item p-4 rounded-xl border bg-white shadow cursor-pointer';
-                    div.innerHTML = `
-        <div class="font-bold text-lg text-gray-800">${item.name}</div>
-        <div class="text-sm text-gray-600">${item.data.JENJANG} • ${item.data.STATUS}</div>
-        <div class="text-xs text-gray-500 mt-1">${item.data.ALAMAT}</div>
-      `;
-                    div.onclick = () => {
-                        map.setView(item.latlng, 17);
-                        item.marker.openPopup();
-                    };
-                    listContainer.appendChild(div);
                 });
+                applyFilters();
+                if (markers.length > 0) {
+                    const group = L.featureGroup(markers.map(m => m.marker));
+                    map.fitBounds(group.getBounds().pad(0.1));
+                }
             })
             .catch(err => console.error('Error load GeoJSON:', err));
     </script>
+
+    <!-- =====================================================
+         SMOOTH SCROLL ANCHOR
+    ====================================================== -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- =====================================================
+         ANIMASI GLOBAL SECTION DAN GRID
+    ====================================================== -->
+    <script>
+        document.querySelectorAll("section, footer, nav, .grid, .col-span-1, .col-span-2").forEach(el => {
+            el.classList.add("fade-section");
+        });
+
+        const fadeObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add("show");
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll(".fade-section").forEach(el => fadeObserver.observe(el));
+    </script>
+
 </body>
 
 </html>
