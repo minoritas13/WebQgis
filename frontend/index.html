@@ -414,7 +414,7 @@
         fetch("https://web-qgis-ipje.vercel.app/geojson/peta.json")
             .then(response => response.json())
             .then(data => {
-                const geojsonData = data.geojson;
+                const geojsonData = data;
 
                 const customIcon = L.icon({
                     iconUrl: './icons/gas.png',
