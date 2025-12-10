@@ -2,22 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
-
 class MapController extends Controller
 {
     public function show()
     {
-        $path = 'geojson/peta.json';
-        if (! Storage::disk('public')->exists($path)) {
+        $path = public_path('geojson/peta.json'); // ambil dari public/geojson
+        
+        if (! file_exists($path)) {
             abort(404, 'GeoJSON tidak ditemukan');
         }
+        $geojson = json_decode(file_get_contents($path), true);
 
-        $geojson = json_decode(Storage::disk('public')->get($path), true);
-
-        return response()->json([
-            'geojson' => $geojson,
-        ]);
+        return response()->json(['geojson' => $geojson]);
     }
 
     public function view()

@@ -1,0 +1,1938 @@
+{
+    "type": "FeatureCollection",
+    "name": "sekolah_pringsewu_modified",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1,
+                "NAMA_SEKOLAH": "Yayasan Pendidikan Islam Mathlaud Anwad",
+                "JENJANG": "Yayasan",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Ambarawa No. 12, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8604772,
+                    -5.5158152
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Bulok",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Lintas Barat Sumatera, Kec. Bulok"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8715908,
+                    -5.5165505
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 3,
+                "NAMA_SEKOLAH": "SMP Negeri 1 Atap Pardasuka",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Desa Pardasuka Selatan No. 45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9404584,
+                    -5.5174208
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 4,
+                "NAMA_SEKOLAH": "SMK Muhamadiyah Pagelaran",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Gumuk Mas No. 8, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9120751,
+                    -5.3816024
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 5,
+                "NAMA_SEKOLAH": "Yayasan Pendidikan Islam Raudlatul Munawwarah Candiretno",
+                "JENJANG": "Yayasan",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Candiretno KM 2, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9255486,
+                    -5.4045281
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 6,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Bulok",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Bulok Rejo No. 10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8907005,
+                    -5.4845932
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 7,
+                "NAMA_SEKOLAH": "MTS Nurul Falah Gunungtiga",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Dusun Gunung Tiga, RT 02 RW 01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8816228,
+                    -5.4165529
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 8,
+                "NAMA_SEKOLAH": "SD-SMP Negeri Satu Atap 1 Bulok",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Suka Agung, Kec. Bulok"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8757915,
+                    -5.4605448
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 9,
+                "NAMA_SEKOLAH": "SMP Hanura Margodadi",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Margodadi Dalam No. 88"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.965402,
+                    -5.3864929
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 10,
+                "NAMA_SEKOLAH": "SMK Ma'arif Ambarawa",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Sapto Mulyo, Ambarawa"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9591275,
+                    -5.4044589
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Ambarawa",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Ambarawa No. 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9630538,
+                    -5.4086386
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 12,
+                "NAMA_SEKOLAH": "SMK Wira Bhakti Ambarawa Barat",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Prajurit No. 22, Ambarawa Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9548396,
+                    -5.4085114
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Pardasuka",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Pardasuka KM 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8920728,
+                    -5.433309
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 14,
+                "NAMA_SEKOLAH": "SMP Negeri 1 Bulok",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Pendidikan No. 1, Bulok"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8965957,
+                    -5.4838253
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 15,
+                "NAMA_SEKOLAH": "MTS PSA Alhikmah Ma'arif Sukaagung",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Pesantren Al Hikmah, Sukaagung"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8806589,
+                    -5.4526572
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 16,
+                "NAMA_SEKOLAH": "MTS Nurul Falah Al-Amin Pardasuka",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Komplek Masjid Besar Pardasuka"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9332668,
+                    -5.4816412
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 17,
+                "NAMA_SEKOLAH": "MTS Miftahul Huda Sukorejo",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Kyai Maja, Sukorejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9180073,
+                    -5.4346157
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 18,
+                "NAMA_SEKOLAH": "Pondok Pesantren Madarijul'ulum' Sukorejo",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Pesantren No. 99, Sukorejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9179531,
+                    -5.4345976
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 19,
+                "NAMA_SEKOLAH": "SMP-SMA 11 Maret Sumberagung",
+                "JENJANG": "SMA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Sumberagung Raya No. 11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9426983,
+                    -5.413305
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 20,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Ambarawa",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Kartini No. 56, Ambarawa"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9128013,
+                    -5.4166939
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 21,
+                "NAMA_SEKOLAH": "MTS MA Nurul Iman",
+                "JENJANG": "MA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Imam Bonjol, Pringsewu Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9319717,
+                    -5.4383356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 22,
+                "NAMA_SEKOLAH": "SMP Negeri 3 Pardasuka",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Wargomulyo, Pardasuka"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9270412,
+                    -5.4524023
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 23,
+                "NAMA_SEKOLAH": "SMP Muhammadiyah Parerejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. KH Ahmad Dahlan, Parerejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9930223,
+                    -5.4118331
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 24,
+                "NAMA_SEKOLAH": "SMP Negeri 4 Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Tegalsari, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9888793,
+                    -5.4007692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 25,
+                "NAMA_SEKOLAH": "SMK Negeri 1 Pagelaran",
+                "JENJANG": "SMK",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Pagelaran No. 101"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8742382,
+                    -5.287494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 26,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Sukoharjo",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Waringin Sari, Sukoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9928615,
+                    -5.2685633
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 27,
+                "NAMA_SEKOLAH": "SMK Budi Utama Pringsewu",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. KH Gholib No. 33, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9516753,
+                    -5.3568918
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 28,
+                "NAMA_SEKOLAH": "AKBID Alifa Sidoharjo",
+                "JENJANG": "Pendidikan Tinggi",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Kesehatan No. 5, Sidoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9901798,
+                    -5.3568936
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 29,
+                "NAMA_SEKOLAH": "SMP Negeri 3 Pringsewu Timur",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Jendral Sudirman, Pringsewu Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.980829,
+                    -5.3565587
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 30,
+                "NAMA_SEKOLAH": "Pondok Pesantren Al Muawwanah",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Gang Santri No. 7, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.953995,
+                    -5.3563039
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 31,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Pringsewu",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Olahraga No. 01, Pringsewu Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9688338,
+                    -5.3512207
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 32,
+                "NAMA_SEKOLAH": "STKIP Muahamadiyah Pringsewu Lampung",
+                "JENJANG": "Pendidikan Tinggi",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Makam KH Ahmad Dahlan, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9722818,
+                    -5.3479099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 33,
+                "NAMA_SEKOLAH": "STMIK Pringsewu",
+                "JENJANG": "Pendidikan Tinggi",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Wisma Rini No. 09, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9719114,
+                    -5.3573544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 34,
+                "NAMA_SEKOLAH": "SMA Negeri 2 Gadingrejo",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Wonodadi, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0396978,
+                    -5.3856874
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 35,
+                "NAMA_SEKOLAH": "SMK Negeri 1 Gadingrejo",
+                "JENJANG": "SMK",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Bulumanis KM 1.5 Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0256428,
+                    -5.3629
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 36,
+                "NAMA_SEKOLAH": "MTS Samiftahul Huda",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Raya Banyumas, Sukoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9053183,
+                    -5.2979935
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 37,
+                "NAMA_SEKOLAH": "MTS YKU Podomoro",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Podomoro Indah No. 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9840336,
+                    -5.3412068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 38,
+                "NAMA_SEKOLAH": "SMA Negeri 2 Pringsewu",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Mekarsari, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9819669,
+                    -5.3327301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 39,
+                "NAMA_SEKOLAH": "SMK Ma'rif Pringsewu Rejosari",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Rejosari No. 11, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.97397,
+                    -5.3392524
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 40,
+                "NAMA_SEKOLAH": "SMP Negeri 4 Rejosari",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Veteran Rejosari"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9632023,
+                    -5.3414592
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 41,
+                "NAMA_SEKOLAH": "STIKES Muhammadiyah Pringsewu",
+                "JENJANG": "Pendidikan Tinggi",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Makam KH Ahmad Dahlan No. 10B"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.971975,
+                    -5.348136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 42,
+                "NAMA_SEKOLAH": "Pondok Pesantren Daarush-Sholihien",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Pesantren No. 8, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9768038,
+                    -5.3462817
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 43,
+                "NAMA_SEKOLAH": "SMP Islam Kh.Ghalib Pringsewu Utara",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. KH Ghalib Raya, Pringsewu Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9756484,
+                    -5.3484709
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 44,
+                "NAMA_SEKOLAH": "SMK 2 Mei 87 Pringsewu",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Gunung Kancil, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9711716,
+                    -5.3497643
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 45,
+                "NAMA_SEKOLAH": "SMK Pelita Pringsewu",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Sakti Raya No. 10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9731752,
+                    -5.3515828
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 46,
+                "NAMA_SEKOLAH": "SMP Muhamadiyah 1 Pringsewu Utara",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Melati III, Pringsewu Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9781394,
+                    -5.352162
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 47,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Pagelaran",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Pagelaran, Gumuk Mas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.929515,
+                    -5.3715902
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 48,
+                "NAMA_SEKOLAH": "SMA Yadika Pagelaran",
+                "JENJANG": "SMA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Ahmad Yani No. 1, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9167619,
+                    -5.366034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 49,
+                "NAMA_SEKOLAH": "MTS Negeri Pamenang",
+                "JENJANG": "MTS",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Pamenang Raya, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9093444,
+                    -5.3531869
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 50,
+                "NAMA_SEKOLAH": "SMP PGRI 1 Pagelaran",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Tangsi, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9150747,
+                    -5.3613477
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 51,
+                "NAMA_SEKOLAH": "SMP Xaverius Pagelaran",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Gereja No. 5, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9002622,
+                    -5.3667462
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 52,
+                "NAMA_SEKOLAH": "Yayasan Pendidikan Islam At-Turts Al-Islamy",
+                "JENJANG": "Yayasan",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Karang Sari, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9074133,
+                    -5.3504094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 53,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Pagelaran",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Lugusari, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8930743,
+                    -5.2802965
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 54,
+                "NAMA_SEKOLAH": "SMP Negeri 1 Banyumas",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Banyumas No. 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9214746,
+                    -5.286172
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 55,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Banyumas",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Sri Rahayu, Banyumas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9242346,
+                    -5.2993802
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 56,
+                "NAMA_SEKOLAH": "MA Negeri Pringsewu",
+                "JENJANG": "MA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Bukit Bintang, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.942008,
+                    -5.3633773
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 57,
+                "NAMA_SEKOLAH": "SMP Negeri 5 Pringsewu",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Kesehatan, Pringsewu Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9358516,
+                    -5.3693383
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 58,
+                "NAMA_SEKOLAH": "MTS Islamiyah",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Raya Sukoharjo III"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9839895,
+                    -5.2994751
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 59,
+                "NAMA_SEKOLAH": "MA Ma'arif Kputeran",
+                "JENJANG": "MA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Keputran, Sukoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.984793,
+                    -5.2905462
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 60,
+                "NAMA_SEKOLAH": "MTS Tsanawiyah Negeri Sukoharjo",
+                "JENJANG": "MTS",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Sukoharjo I"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9270246,
+                    -5.2888957
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 61,
+                "NAMA_SEKOLAH": "Yayasan Pendidikan Islam Muhamadiyah",
+                "JENJANG": "Yayasan",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. KH Ahmad Dahlan No. 12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9833223,
+                    -5.2747238
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 62,
+                "NAMA_SEKOLAH": "SMK Negeri 1 Sukoharjo",
+                "JENJANG": "SMK",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Wiyata Mandala, Sukoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.98639,
+                    -5.3063506
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 63,
+                "NAMA_SEKOLAH": "SMP Negeri Sukoharjo",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Pendidikan No. 2, Sukoharjo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9850453,
+                    -5.3059254
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 64,
+                "NAMA_SEKOLAH": "Yayasan Pendidikan Islam Darul Ulum Sukoharjo",
+                "JENJANG": "Yayasan",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Pesantren Darul Ulum"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9857494,
+                    -5.2998461
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 65,
+                "NAMA_SEKOLAH": "MTS Ma'arif Siliwangi",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Siliwangi No. 45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9433414,
+                    -5.2906162
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 66,
+                "NAMA_SEKOLAH": "Pondok Pesantren Al-Munir Al-Islam Sukoharjo",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Pesantren Al Munir"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9772747,
+                    -5.3038987
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 67,
+                "NAMA_SEKOLAH": "SMK 17 Sukoharjo",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Proklamasi No. 17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.978448,
+                    -5.3039621
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 68,
+                "NAMA_SEKOLAH": "SMP 17 Pringsewu",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Pemuda No. 17, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.965566,
+                    -5.3606832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 69,
+                "NAMA_SEKOLAH": "SMP Xaverius Pringsewu",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Mawar No. 5, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9768034,
+                    -5.3577346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 70,
+                "NAMA_SEKOLAH": "SMP Al-Fajar Pringsewu",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Fajar Baru No. 8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.972597,
+                    -5.3650621
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 71,
+                "NAMA_SEKOLAH": "MTS Negeri Pringsewu",
+                "JENJANG": "MTS",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Hi. Juanda No. 10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9743661,
+                    -5.3653064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72,
+                "NAMA_SEKOLAH": "Pondok Pesantren Putra Putri Nurul Huda Pringsewu",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. KH. Ghalib, Pringsewu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.974637,
+                    -5.3628186
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73,
+                "NAMA_SEKOLAH": "SMK YPT Pringsewu Timur",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Jendral Sudirman No. 100"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9828506,
+                    -5.362457
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 74,
+                "NAMA_SEKOLAH": "SMK PGRI 1 dan 2 Pringsewu",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Pringsewu - Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9874178,
+                    -5.3616158
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 75,
+                "NAMA_SEKOLAH": "SMA Xaverius Pringsewu Timur",
+                "JENJANG": "SMA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Gereja Santo Yusuf"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9785183,
+                    -5.3593087
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 76,
+                "NAMA_SEKOLAH": "Pondok Pesantren Miftahul Huda Sinarmulya",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Sinar Mulya No. 9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9063835,
+                    -5.296492
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 77,
+                "NAMA_SEKOLAH": "Pondok Pesantren Margosari",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Margosari Indah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8836468,
+                    -5.2622561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 78,
+                "NAMA_SEKOLAH": "SMP Negeri 3 Pagelaran",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Gumuk Rejo, Pagelaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.8826374,
+                    -5.3507579
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 79,
+                "NAMA_SEKOLAH": "SMP Negeri 1 Pagelaran",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Pagelaran No. 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9075103,
+                    -5.3652819
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 80,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Wates Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Wates Selatan, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0234682,
+                    -5.3795548
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 81,
+                "NAMA_SEKOLAH": "SMP Harapanmasa Gadingrejo Utara",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Harapan Jaya No. 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0640678,
+                    -5.3752095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 82,
+                "NAMA_SEKOLAH": "MTS Raden Intan Wonodadi",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Wonodadi Raya No. 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0520361,
+                    -5.3773095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 83,
+                "NAMA_SEKOLAH": "Pondok Pesantren Mamba'ul Hisan Sidodadi",
+                "JENJANG": "Pondok Pesantren",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Sidodadi Makmur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0320259,
+                    -5.3940831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 84,
+                "NAMA_SEKOLAH": "SMP Karya Bhakti Wates",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Karya Bhakti No. 8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0165542,
+                    -5.3829927
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 85,
+                "NAMA_SEKOLAH": "SMP Patria Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Gadingrejo KM 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0558179,
+                    -5.3757079
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 86,
+                "NAMA_SEKOLAH": "SMA Patria Gadingrejo",
+                "JENJANG": "SMA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Gadingrejo KM 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0560526,
+                    -5.3754907
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 87,
+                "NAMA_SEKOLAH": "SMK Negeri 1 Katon",
+                "JENJANG": "SMK",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Katon, Pesawaran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0709072,
+                    -5.3542932
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 88,
+                "NAMA_SEKOLAH": "SMP PGRI Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. PGRI No. 1, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0660962,
+                    -5.3527016
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 89,
+                "NAMA_SEKOLAH": "SMA Negeri 1 Gadingrejo Utara",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Tegalsari, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0604739,
+                    -5.3600389
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 90,
+                "NAMA_SEKOLAH": "SMK Yapema Gadinrejo",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Gadingrejo No. 88"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0603662,
+                    -5.3666609
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 91,
+                "NAMA_SEKOLAH": "SMA Muhammadiyah Gadingrejo",
+                "JENJANG": "SMA",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. KH Ahmad Dahlan No. 2, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0603753,
+                    -5.3672128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 92,
+                "NAMA_SEKOLAH": "SMP-SMK Widya Yahya Gadingrejo Utara",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Widya Bhakti No. 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0649974,
+                    -5.374929
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 93,
+                "NAMA_SEKOLAH": "SMP Muhammdiyyah Gadingrejo utara",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Muhammadiyah No. 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0631742,
+                    -5.3749563
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 94,
+                "NAMA_SEKOLAH": "SMP Negeri Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Raya Gadingrejo KM 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0622534,
+                    -5.3738708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 95,
+                "NAMA_SEKOLAH": "MTS Ibnu Zein Purwodadi",
+                "JENJANG": "MTS",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Purwodadi Dalam"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0161632,
+                    -5.2742805
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 96,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Adiluwih",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Adiluwih Raya No. 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0105046,
+                    -5.2675319
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 97,
+                "NAMA_SEKOLAH": "SMP Negeri 2 Sukoharjo",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Sukoharjo Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0072653,
+                    -5.3128823
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 98,
+                "NAMA_SEKOLAH": "SMA Negeri 3 Gadingrejo",
+                "JENJANG": "SMA",
+                "STATUS": "Negeri",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Parerejo, Gadingrejo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0540994,
+                    -5.3355596
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 99,
+                "NAMA_SEKOLAH": "SMP Dharma Bhakti Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Bhakti No. 9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0322583,
+                    -5.351474
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 100,
+                "NAMA_SEKOLAH": "SMP Muhammadiyah 2 Gadingrejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Tulung Agung"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0227,
+                    -5.3518634
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 101,
+                "NAMA_SEKOLAH": "SMP Islam Terpadu Pujorahayu",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Pujo Rahayu Utama"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0763396,
+                    -5.3452008
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 102,
+                "NAMA_SEKOLAH": "SMP Yamaco Kalirejo",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "C",
+                "ALAMAT": "Jl. Kalirejo Permai"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0897425,
+                    -5.3427564
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 103,
+                "NAMA_SEKOLAH": "SMK BTC Roworejo",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Roworejo Indah No. 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0551332,
+                    -5.2889156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 104,
+                "NAMA_SEKOLAH": "SMP Islam Adiluwih",
+                "JENJANG": "SMP",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Raya Adiluwih"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0344805,
+                    -5.2223526
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 105,
+                "NAMA_SEKOLAH": "SMK Taruna Adiluwih",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "B",
+                "ALAMAT": "Jl. Taruna Bakti, Adiluwih"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0347693,
+                    -5.2222983
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 106,
+                "NAMA_SEKOLAH": "SMK Al-Kautsar Adiluwih",
+                "JENJANG": "SMK",
+                "STATUS": "Swasta",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Kautsar Raya No. 99"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0303565,
+                    -5.2202268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 107,
+                "NAMA_SEKOLAH": "SMP Negeri 1 Adiluwih",
+                "JENJANG": "SMP",
+                "STATUS": "Negeri",
+                "AKREDITASI": "A",
+                "ALAMAT": "Jl. Pendidikan No. 1, Adiluwih"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.0294541,
+                    -5.2208692
+                ]
+            }
+        }
+    ]
+}
